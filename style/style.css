@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: #1D3461;
+    --color2: #1F487E;
+
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: 'Poppins', sans-serif;
+}
+
+* {
+    font-weight: normal;
+}
+
+body {
+    background-color: #142545;
+}
+
+div#container { /*Concertar a rolagem lateral para dispositivos pequenos*/
+    overflow-x: visible;
+}
+
+table {
+    background-color: rgb(179, 176, 176);
+    width: 600px;
+    height: 250px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.548);
+}
+
+caption {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color1);
+    color: white;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: -1px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.548);
+}
+
+thead {
+    background-color: var(--color2);
+}
+
+thead th {
+    color: white;
+    font-family: var(--font1);
+    font-weight: 300;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    font-family: var(--font1);
+    padding: 1px;
+    border: 1px solid black;
+}
+
+.destaque {
+    font-weight: 500;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}

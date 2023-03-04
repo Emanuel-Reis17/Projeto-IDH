@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela principal</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        main {
+            background-color: rgb(181, 8, 8);
+            width: 600px;
+            text-align: center;
+            margin: auto;
+            box-shadow: 2px;
+            border: 1px solid black;
+        }
+
+        nav {
+            background-color: aqua;
+            height: 25px;
+        }
+
+        ul > li {
+            display: inline;
+            text-decoration: none;
+            font-family: 'Poppins', cursive;
+            padding: 0px 30px 0px 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        iframe {
+            background-color: black;
+            width: 620px;
+            height: 350px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>I</span>frame</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="pages/table1.html" target="frame">United States</a></li>
+                <li><a href="pages/table2.html" target="frame">Canada</a></li>
+                <li><a href="pages/table3.html" target="frame">Mexico</a></li>
+            </ul>
+            <div>
+                <iframe name="frame" src="" frameborder="1" scrolling="auto"
+                referrerpolicy="no-refferrer"
+                sandbox="allow-same-origin" srcdoc="<h1 style='color: white; font-family: Arial;'>Selecione uma das opções acima">
+                    <p>O seu navegador não é compatível com este conteúdo</p>
+                </iframe>
+            </div>
+    </main>
+</body>
+</html>
