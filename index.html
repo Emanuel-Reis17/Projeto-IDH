@@ -9,35 +9,95 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        main {
-            background-color: rgb(181, 8, 8);
+        :root {
+            --color1: #1D3461;
+            --color2: #1F487E;
+
+            --font0: Arial, Helvetica, sans-serif;
+            --font1: 'Poppins', cursive;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #0F1A20, var(--color1));
+        }
+
+        header {
+            background-color: var(--color1);
             width: 600px;
-            text-align: center;
             margin: auto;
-            box-shadow: 2px;
-            border: 1px solid black;
+            padding: 0px 20px 0px 20px;
+            border-radius: 5px 5px 0px 0px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.306);
+        }
+
+        h1 {
+            font-family: var(--font1);
+            color: rgb(206, 202, 202);
+            padding-right: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.428);
+        }
+
+        span {
+            color: var(--color2);
+        }
+
+        main {
+            text-align: center;
+            background-color: var(--color1);
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.306);
         }
 
         nav {
-            background-color: aqua;
-            height: 25px;
+            background-color: var(--color2);
+            width: 250px;
+            margin: auto;
+            border-radius: 5px;
         }
 
-        ul > li {
+        li {
             display: inline;
-            text-decoration: none;
-            font-family: 'Poppins', cursive;
-            padding: 0px 30px 0px 30px;
+            font-family: var(--font1);
+            padding-right: 10px;
         }
 
         a {
             text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            background-color: #2292A4;
+            padding: 2px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.306);
+            transition-duration: 0.4s;
         }
 
         iframe {
-            background-color: black;
-            width: 620px;
-            height: 350px;
+            width: 550px;
+            height: 300px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.306);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1D3461;
+            width: 640px;
+            margin: auto;
+            font-family: var(--font1);
+            border-radius: 0px 0px 2px 2px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.306);
+        }
+
+        footer p {
+            color: white;
+        }
+
+        #destaque {
+            font-weight: bold;
         }
 
     </style>
@@ -49,17 +109,20 @@
     <main>
         <nav>
             <ul>
-                <li><a href="pages/table1.html" target="frame">United States</a></li>
+                <li><a href="pages/table1.html" target="frame">USA</a></li>
                 <li><a href="pages/table2.html" target="frame">Canada</a></li>
                 <li><a href="pages/table3.html" target="frame">Mexico</a></li>
             </ul>
+        </nav>
             <div>
                 <iframe name="frame" src="" frameborder="1" scrolling="auto"
                 referrerpolicy="no-refferrer"
-                sandbox="allow-same-origin" srcdoc="<h1 style='color: white; font-family: Arial;'>Selecione uma das opções acima">
-                    <p>O seu navegador não é compatível com este conteúdo</p>
+                sandbox="allow-same-origin" srcdoc="<h1 style='color: white; font-family: Arial; font-size: 20px;'>Select the country above">
                 </iframe>
             </div>
     </main>
+    <footer>
+        <p>Site criado pelo <a id="destaque" href="https://www.google.com/search?q=teclado&rlz=1C1CHZL_pt-BRBR1035BR1035&oq=te&aqs=chrome.1.69i57j69i59j0i433i512j0i131i433i512j46i131i199i433i465i512j69i61l2j69i60.1334j0j7&sourceid=chrome&ie=UTF-8">teclado</a></p>
+    </footer>
 </body>
 </html>
